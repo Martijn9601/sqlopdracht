@@ -1,0 +1,167 @@
+Microsoft Windows [Version 10.0.17134.345]
+(c) 2018 Microsoft Corporation. Alle rechten voorbehouden.
+
+C:\Users\Martijn>mysql>create database opdracht1
+'mysql' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Martijn>cd ../..
+
+C:\>cd xampp
+
+C:\xampp>cd mysql/bin
+
+C:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 2
+Server version: 10.1.36-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database opdracht1;
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]> use opdracht1
+Database changed
+MariaDB [opdracht1]> create table teachers (
+    ->
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+MariaDB [opdracht1]> mysql - uroot ppassword < opdracht1.sql
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'mysql - uroot ppassword < opdracht1.sql' at line 1
+MariaDB [opdracht1]> mysql - uroot ppassword < opdracht1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'mysql - uroot ppassword < opdracht1' at line 1
+MariaDB [opdracht1]> exit;
+Bye
+
+C:\xampp\mysql\bin>mysql -u root < opdrachttest.sql
+ERROR 1072 (42000) at line 3: Key column 'ID' doesn't exist in table
+
+C:\xampp\mysql\bin>mysql -u root < opdrachttest.sql
+ERROR 1007 (HY000) at line 1: Can't create database 'opdrachttest'; database exists
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 23
+Server version: 10.1.36-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> drop database opdrachttest;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| opdracht1          |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+6 rows in set (0.00 sec)
+
+MariaDB [(none)]> exit
+Bye
+
+C:\xampp\mysql\bin>mysql -u root < opdrachttest.sql
+ERROR 1072 (42000) at line 3: Key column 'ID' doesn't exist in table
+
+C:\xampp\mysql\bin>mysql -u root < opdrachttest.sql
+ERROR 1007 (HY000) at line 1: Can't create database 'opdrachttest'; database exists
+
+C:\xampp\mysql\bin>mysql -u root < opdrachttest.sql
+ERROR 1007 (HY000) at line 1: Can't create database 'opdrachttest'; database exists
+
+C:\xampp\mysql\bin>mysql -u root < opdrachttest.sql
+ERROR 1007 (HY000) at line 1: Can't create database 'opdrachttest'; database exists
+
+C:\xampp\mysql\bin>mysql -u root < opdrachttest.sql
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 29
+Server version: 10.1.36-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use opdrachttest
+Database changed
+MariaDB [opdrachttest]> show tables';
+    '> ;
+    '> Bye
+Ctrl-C -- exit!
+
+C:\xampp\mysql\bin>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 30
+Server version: 10.1.36-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use databasetest;
+ERROR 1049 (42000): Unknown database 'databasetest'
+MariaDB [(none)]> use opdrachttest;
+Database changed
+MariaDB [opdrachttest]> show tables;
++------------------------+
+| Tables_in_opdrachttest |
++------------------------+
+| classes                |
+| student_subjects       |
+| students               |
+| subjects               |
+| teacher_subjects       |
+| teachers               |
++------------------------+
+6 rows in set (0.00 sec)
+
+MariaDB [opdrachttest]> exit
+Bye
+
+C:\xampp\mysql\bin>use database opdrachttest
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\mysql\bin>use opdrachttest
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\mysql\bin>use Tables_in_opdrachttest
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\mysql\bin>use Tables_in_opdrachttest;
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 31
+Server version: 10.1.36-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use Tables_in_opdrachttest
+ERROR 1049 (42000): Unknown database 'tables_in_opdrachttest'
+MariaDB [(none)]> use Tables_in_opdrachttest;
+ERROR 1049 (42000): Unknown database 'tables_in_opdrachttest'
+MariaDB [(none)]> use opdrachttest;
+Database changed
+MariaDB [opdrachttest]>
+
